@@ -13,6 +13,11 @@ function init() {
 	container.style.maxWidth = '600px';
 	container.style.margin = 'auto';
 	document.body.appendChild(container);
+	var heading = document.createElement('h1');
+	heading.textContent = 'Pure Javascript Calculator';
+	heading.style.textAlign = 'center';
+	heading.style.color = 'red';
+	container.appendChild(heading);
 	var output = document.createElement('input');
 	output.classList.add('output');
 	output.setAttribute('type', 'text');
